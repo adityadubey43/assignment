@@ -1,0 +1,27 @@
+<div class="display-flex-wrap-aa">
+    <div class="side-blogs-all-main-page">    
+
+        <% if(blogs.length>0){ %>
+            <% for(var i=0; i <=3; i++){ %>
+                <div class="blogs-side-panel">
+                    <h3 class="side-panel-next-blog title-font">
+                        <%= blogs[i].title %>
+                        <% var title = (blogs[i].title.slice(0, 40)).toLowerCase() %>
+                        <% title = title.replace(/ /g, "-");%>
+                    </h3>
+                    <p class="side-panel-next-blog">
+                        <%= blogs[i].snippet %>
+                    </p>
+                    <a href="/<%= title %>/<%= blogs[i].id %>">
+                        <button class="btn btn-danger">
+                            Read More
+                        </button>
+                    </a>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+    <div class="side-bottom-image">
+        <img class="botton-image" src="/images/mariana-medvedeva-usfIE5Yc7PY-unsplash.jpg" alt="">
+    </div>
+</div>

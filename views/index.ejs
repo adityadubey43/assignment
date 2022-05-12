@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<Head>
+    <%- include('./partials/Head.ejs')%>
+        <meta name="keywords" content="<%=keywords%>">
+        <title>eGlobalDoctors | <%= title %></title>
+</Head>
+
+<body>
+
+    <%- include('./partials/Nav.ejs')%>
+        <div class="blogs-f-s">
+            <%- include('./partials/firstscreen.ejs')%>
+        </div>
+
+        <div class="container-margin"> 
+            <h2 class="bottom-border">
+                Categories
+            </h2>
+        </div>
+
+        <div class="container-margin"> 
+            <%- include('./partials/categories.ejs')%>
+        </div>
+        <div class="container-margin"> 
+            <h2 class="bottom-border">
+                Featured
+            </h2>
+        </div>
+        <div class="container-margin"> 
+                <%- include('./partials/secondscreen.ejs')%>
+        </div>
+        <div class="container-margin"> 
+            <h2 class="bottom-border">
+                More Blogs
+            </h2>
+        </div>
+        <div class="container-margin"> 
+            <%- include('./partials/bottomblogs.ejs')%>
+        </div>
+    </div>
+
+        <div class="footer">
+            <%- include('./partials/Footer.ejs')%>
+        </div>
+
+        
+</body>
+
+</html>

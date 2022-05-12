@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --container-breakpoint-sm: 540px;
+    --container-breakpoint-md: 720px;
+    --container-breakpoint-lg: 960px;
+    --container-breakpoint-xl: 1140px;
+    --grid-breakpoint-xs: 0px;
+    --grid-breakpoint-sm: 576px;
+    --grid-breakpoint-md: 768px;
+    --grid-breakpoint-lg: 992px;
+    --grid-breakpoint-xl: 1200px;
+    --d-grid-breakpoint-xs: -0.02px;
+    --d-grid-breakpoint-sm: 575.98px;
+    --d-grid-breakpoint-md: 767.98px;
+    --d-grid-breakpoint-lg: 991.98px;
+    --d-grid-breakpoint-xl: 1199.98px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --egd-font-family: "Montserrat", sans-serif;
+    /* --egd-font-family: "Montserrat"; */
+    --egd-color: #004aad;
+    --button-shadow: rgba(24, 74, 173, .5) -5px 5px 5px, rgba(24, 74, 173, .5) 5px -5px 5px, rgba(24, 74, 173, .5) -5px 5px 5px, rgba(24, 74, 173, .5) 5px 5px 5px, rgba(24, 74, 173, .5) 5px -5px 5px;
+    --button-shadow: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+html{
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logo{
+    height: 40px;
+    width: 80px;
+}
+
+.bg-blue {
+    
+    background-color: #004aad;
+}
+.color-white {
+    color: white;
+}
+
+/* navbar Start  */
+
+    
+
+/* navbar end  */
+
+/* first Screen  */
+.f-h1{
+    font-size: 51px;
+    font-weight: 600;
+    text-shadow: 2px 10px 20px #000000;
+}
+.f-p{
+    margin-top: 15px;
+    font-size: 23px;
+    text-shadow: 2px 10px 20px #000000;
+}
+.blogs-f-s{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 627px;
+    margin-top: 10px;
+}
+.first-blog-image{
+    width: 100%;
+    height: 627px;
+    display: flex;
+}
+.content{
+    margin-top: 150px;
+    margin-left: 30px;
+    width: 900px;   
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    
+}
+@keyframes example {
+    0%   {left:-100px; top:0px;}
+    100%  {left:0px; top:0px;}
+    
+  }
+/* first Screen  */
+.container-margin {
+    /* border: 2px solid black; */
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.display-flex-wrap-aa{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.display-flex-wrap{
+    
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.display-flex-wrap:hover{
+    background-color: #e8e8e8;
+    border-radius: 30px;
+}
+.title-font{
+    font-size: 24px;
+}
+.second-screen-image{
+    border-radius: 30px;
+    height: 250px;
+    width: 100%;
+}
+/* Details Screen */
+
+.blogs{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-blog-title{
+   
+}
+/* .blog-body{
+    text-align:justify;
+} */
+.blog-image{
+    margin-top: 15px;
+    height: 340px;
+    width: 610px;
+    border-radius: 30px;
+}
+/* Details Screen */
+
+.blogs-form{
+    margin: 20px;
+}
+h2{
+    /* text-align: center;  */
+       
+}
+.bottom-border{
+    border-bottom: 1px solid #b7b6b6;
+    font-weight: 600;
+}
+.botton-image{
+    width: 610px;
+    height: 870px;
+    border-radius: 30px;
+}
+
+.category-options{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.category-options:hover{
+    color: black;
+}
+/* Footer section */
+.footer{
+    margin-top: 150px;
+}
+.footer-download-section {
+    background-color: #fff;
+    transform: translate(0px,-80px);
+    box-shadow: 5px 5px 9px -1px rgba(0, 0, 0, 0.55);
+}
+.app-image{
+    height: 50px;
+    width: 150px;
+}
+.footer-social-logos {
+    width: 20px;
+    height: auto;
+}
+
+.footer-social-label {
+    margin-left: 7% !important;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+li{
+    margin: 10px;
+}
+
+/* footer section end here */
+.Services-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.service-image{
+    margin-bottom: 6px;
+    height: 100px;
+    width: 200px;
+}
+h1 , p{
+    color: black;
+}
+p{
+    font-size: 17px;  
+}
+.image-categories{
+    margin-bottom: 15px;
+    height: 177px;
+    width: 390px;
+    border-radius: 30px;
+}
+.side-blogs-all{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-evenly;
+    align-items:flex-start;
+    width: 324px;
+}
+.side-blogs-all-main-page{
+  display: flex;
+  flex-direction: column;  
+  align-items:flex-start;
+  width: 650px;
+}
+.blogs-side-panel{
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.side-panel-next-blog{
+    
+}
+.redirect-to-egd{
+  background-color: rgb(227, 227, 227);
+  border-radius: 30px;
+  padding: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.Doctor-image{
+    height: 130px;
+    width: 200px;
+}
+.lead{
+    font-size: 17px;
+}
+.hello{
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .f-h1{
+        font-size: 30px;  
+    }
+    p{
+        font-size: 17px;  
+    }
+    .blogs-f-s{
+        /* border: 2px solid black; */
+        height: 560px; 
+    }
+      .content {
+        margin-top: 95px;       
+      }
+    .first-blog-image{
+       
+        height: 560px;
+        
+    }
+    .container-margin{
+        /* border: 2px solid black; */
+        margin: 20px 15px 20px 15px;
+        
+        
+    }
+    .Next-blogs{
+        margin-top: 20px;  
+    }
+    .title-font{
+        font-size: 20px;
+    }
+    .second-screen-image{
+        border-radius: 30px;
+        height: 189px;
+        width: 327px;
+        margin-bottom: 10px;
+    }
+
+    .display-flex-wrap{
+        text-align: start;
+    }
+    .image-categories{
+        height: 86px;
+        width: 156px;
+        border-radius: 15px;
+        background-size: 200px;
+    }
+    .botton-image{
+        display: none;
+    }
+    .blog-image{
+        width: 350px;
+        height: 230px;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-size: 18px;
+    }
+}
+  
+  
+ 

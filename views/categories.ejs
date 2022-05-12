@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<Head>
+    <%- include('./partials/Head.ejs')%>
+        <meta name="keywords" content="<%=keywords%>">
+        <title>eGlobalDoctors | <%= title %></title>
+</Head>
+
+<body>
+
+    <%- include('./partials/Nav.ejs')%>
+
+    <div class="filter">
+        <% for(var i=0; i < blogs.length; i++){ %>
+            <% var a = title %>
+            <% if(blogs[i].option === String(a).toLowerCase()) { %>
+                <div class="first-blog-image img-fluid" style="background-image: url('<%= blogs[i].image %>'); background-size: 1514px; @media only screen and (max-width: 600px) {
+                    background-size: 900px;
+                  }">
+                    <div class="content">
+                        <h1 class="text-light f-h1">
+                            <%= blogs[i].title %>
+                            <% var title = (blogs[i].title.slice(0, 40)).toLowerCase() %>
+                            <% title = title.replace(/ /g, "-");%>
+                        </h1>
+                        <p class="text-light f-p">
+                            <%= blogs[i].snippet %>
+                        </p>
+                        <a href="/<%= a.toLowerCase() %>/<%= title %>/<%= blogs[i].id %>">
+                            <button class="btn btn-danger">
+                                Read More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+    
+    <div class="footer">
+        <%- include('./partials/Footer.ejs')%>
+    </div>
+</body>
+
+</html>

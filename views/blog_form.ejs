@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <%- include('./partials/Head.ejs')%>
+        <title>eGlobalDoctors | <%= title %></title>
+    </Head>
+<body>
+    <!-- Nav Section Started -->
+    <%- include('./partials/Nav.ejs')%>
+    <!--Nav Section Ended-->
+    <!-- Blogs First Screen -->
+    <div class="blogs-form">
+        
+        <form action="/add-blog" method="post">
+            <div class="form-group mt-2">
+              <label for="title">Enter the title *</label>
+              <input type="text" class="form-control" name="title" id="title" required placeholder="Enter The Title">
+            </div>
+            <div class="form-group mt-2">
+                <label for="snippet">Enter the snippet *</label>
+                <input type="text" class="form-control" name="snippet" id="snippet" required placeholder="Enter The snippet">
+            </div>
+            <div class="form-group mt-2">
+              <select class="form-select" aria-label="Default select example" id="option" name="option">
+                <option selected>Chosse the category of blog</option>
+                <option value="diet">Diet</option>
+                <option value="fitness">Fitness</option>
+                <option value="yoga">Yoga</option>
+                <option value="womenwellness">Women's wellness</option>
+                <option value="parenthood">Parenthood</option>
+                <option value="mentalhealth">Mental Health</option>
+              </select>
+            </div>
+              
+            <div class="form-group mt-2">
+                <label for="content">Enter the blog body </label>
+                <textarea class="form-control" name="body" id="body" rows="3"></textarea>
+            </div>
+            <div class="form-group mt-2">
+              <label for="snippet1">Enter the snippet1 *</label>
+              <input type="text" class="form-control" name="snippet1" id="snippet1" required placeholder="Enter The snippet1">
+            </div>
+            <div class="form-group mt-2">
+              <label for="content">Enter the blog body1 </label>
+              <textarea class="form-control" name="body1" id="body1" rows="3"></textarea>
+            </div>
+            <div class="form-group mt-2">
+              <label for="snippet2">Enter the snippet2 *</label>
+              <input type="text" class="form-control" name="snippet2" id="snippet2" required placeholder="Enter The snippet1">
+            </div>
+            <div class="form-group mt-2">
+              <label for="content">Enter the blog body2 </label>
+              <textarea class="form-control" name="body2" id="body2" rows="3"></textarea>
+            </div>
+            <div class="form-group mt-2">
+                <label for="keywords">Enter the keywords seperated by "," *</label>
+                <input type="text" class="form-control" name="Keywords" id="keywords" required placeholder="Enter the keywords">
+              </div>
+              <div class="form-group mt-2">
+                <label for="image">Enter the image url *</label>
+                <input type="text" class="form-control" name="image" required id="image" placeholder="Enter the image url">
+              </div>
+              <div class="form-group mt-2">
+                <label for="image1">Enter the image url1 *</label>
+                <input type="text" class="form-control" name="image1" required id="image1" placeholder="Enter the image url">
+              </div>
+            <button type="submit" class="btn btn-primary mt-1">Submit</button>
+
+          </form>
+
+    </div>
+    <!-- Blogs First Screen Ended -->
+    <!-- <div class="footer">
+        <%- include('./partials/Footer.ejs')%>
+    </div> -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div class="display-flex-wrap-aa">
+    <% if(blogs.length>0){ %>
+        <% for(var i=blogs.length-2; i >=blogs.length-4; i--){ %>
+           
+            <div class="display-flex-wrap">
+                <img class="second-screen-image" src="<%= blogs[i].image %>" alt="<%= blogs[i].title %>">
+                <h2 class="text-dark title-font">
+                    <%= blogs[i].title %>
+                    <% var title = (blogs[i].title.slice(0, 40)).toLowerCase();%>
+                    <% title = title.replace(/ /g, "-");%>
+                </h2>
+                <p>
+                    <%= blogs[i].snippet %>
+                </p>
+                <a href="/<%= title %>/<%= blogs[i].id %>">
+                    <button class="btn btn-primary">
+                        Read More
+                    </button>
+                </a>        
+            </div> 
+        <% } %>
+    <% } %>
+</div>
